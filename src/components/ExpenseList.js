@@ -4,7 +4,9 @@ import ExpenseListItem from './ExpenseListItem'
 import selectExpenses from '../selectors/expenses'
 
 const ExpenseList = (props) => (
-    props.expenses.map(expense => <ExpenseListItem {...expense} key={expense.id}/>)
+    <div>
+        {props.expenses.map(expense => <ExpenseListItem {...expense} key={expense.id}/>)}
+    </div>
 )
 
 const mapStateToProps = (state) => {
