@@ -1,27 +1,5 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`should rende edit expense page correctly 1`] = `
-<div>
-  <ExpenseForm
-    expense={
-      Object {
-        "amount": 120,
-        "createdAt": 0,
-        "description": "Bubble Gum",
-        "id": "1",
-        "note": "",
-      }
-    }
-    onSubmit={[Function]}
-  />
-  <button
-    onClick={[Function]}
-  >
-    Remove
-  </button>
-</div>
-`;
-
 exports[`should render edit expense page correctly 1`] = `
 <div>
   <ExpenseForm
