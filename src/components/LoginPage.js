@@ -8,9 +8,15 @@ class LoginPage extends React.Component {
     }
     render() {
         return (
-            <div>
-                <h3>Login Page</h3>
-                <button onClick={this.props.startLogin}>Login</button>
+            <div className="box-layout">
+                <div className="box-layout__box">
+                    <h1>Expensify</h1>
+                    <p>managing expenses made easy</p>
+                    <div className="box-layout__box__btn" onClick={this.props.startLogin}>
+                        <i class="fab fa-google"></i>
+                        <p>Login</p>
+                    </div>
+                </div>        
             </div>
         )
     }

@@ -1,0 +1,75 @@
+.box-layout {
+    background: url('/images/background.jpg');
+    height: 100vh;
+    widows: 100vw;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+}
+
+.box-layout__box {
+    margin-left: 300px;
+    background: fade-out($color: #ffffff, $amount: .50);
+    border-radius: 15px;
+    text-align: center;
+    width: 25rem;
+    padding: $l-size $m-size;
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.04);
+}
+
+.box-layout__box h1 {
+    color: $lt-black;
+    font-size: 4rem;
+}
+
+.box-layout__box p {
+    margin-top: -12px;
+    font-size: 1.6rem;
+    width: 80%;
+    margin-bottom: 30px;
+    color: lighten($lt-black, 30%);
+}
+
+.box-layout__box__btn {
+    background-color: $lt-green;
+    padding: $s-size;
+    width: 80%;
+    border-radius: 7px;
+    cursor: pointer;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    transition: ease all 0.2s;
+}
+
+.box-layout__box__btn:hover {
+    transform: translateX(-0.2rem) translateY(-0.2rem);
+    box-shadow: 0.3rem 0.3rem 10px 0px rgba(0, 0, 0, 0.15);
+}
+
+.box-layout__box__btn i {
+    float: left;
+    font-size: 2.2rem;
+    line-height: 100%;
+    color: white;
+    filter: drop-shadow(2px 2px 0px rgba(0, 0, 0, 0.15));
+}
+
+.box-layout__box__btn p {
+    display: inline-block;
+    margin: 0;
+    margin-left: -2rem;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 1.8rem;
+    line-height: 100%;
+    color: #ffffff;
+    letter-spacing: 2px;
+    filter: drop-shadow(2px 2px 0px rgba(0, 0, 0, 0.15));
+}
