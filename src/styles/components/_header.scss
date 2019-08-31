@@ -1,11 +1,21 @@
 .header {
     background: white;
     box-shadow: 0px 5px 10px -5px rgba($color: $dk-blue, $alpha: 0.24);
+    z-index: 3;
+    position: relative;
+}
+
+.header__icon {
+    height: 50px;
+    margin-right: 10px;
 }
 
 .header__title {
-    color: $dk-green;
+    color: $dk-blue;
     text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
     h1 {
         font-family: "Open Sans", sans-serif;
         margin: 0;

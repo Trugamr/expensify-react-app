@@ -6,6 +6,7 @@
     padding: $s-size;
     font-family: 'Montserrat', sans-serif;
     font-size: 1.4rem;
+    text-decoration: none;
 }
 
 .green {
@@ -16,4 +17,9 @@
 .white {
     background-color: white;
     color: $lt-green; 
+}
+
+.yellow {
+    background-color: $dk-yellow;
+    color: $dk-blue;
 }

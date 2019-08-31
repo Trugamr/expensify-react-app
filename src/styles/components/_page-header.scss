@@ -1,0 +1,29 @@
+.page-header {
+    background-color: $lt-yellow;
+    padding: $s-size 0;
+    margin-bottom: $l-size;
+    border-bottom: solid 3px $dk-yellow;
+    color: $dk-blue;
+    font-size: 1.2rem;
+}
+
+.page_header__flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.page-header__title {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    span {
+        font-weight: 700;
+    }
+}
+
+.page-header__action {
+    padding: $m-size 0; 
+    i {
+        font-size: 1.2rem;
+    }
+}
