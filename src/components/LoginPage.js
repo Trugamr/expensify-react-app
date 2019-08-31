@@ -13,7 +13,7 @@ class LoginPage extends React.Component {
                     <h1>Expensify</h1>
                     <p>managing expenses made easy</p>
                     <div className="box-layout__box__btn" onClick={this.props.startLogin}>
-                        <i class="fab fa-google"></i>
+                        <i className="fab fa-google"></i>
                         <p>Login</p>
                     </div>
                 </div>        

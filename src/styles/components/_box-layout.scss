@@ -24,16 +24,17 @@
 }
 
 .box-layout__box h1 {
-    color: $lt-black;
+    color: $dk-blue;
     font-size: 4rem;
+    font-family: "Open Sans", sans-serif;
 }
 
-.box-layout__box p {
+.box-layout__box > p {
     margin-top: -12px;
     font-size: 1.6rem;
     width: 80%;
     margin-bottom: 30px;
-    color: lighten($lt-black, 30%);
+    color: lighten($dk-blue, 14%);
 }
 
 .box-layout__box__btn {
@@ -54,7 +55,7 @@
 
 .box-layout__box__btn i {
     float: left;
-    font-size: 2.2rem;
+    font-size: 2rem;
     line-height: 100%;
     color: white;
     filter: drop-shadow(2px 2px 0px rgba(0, 0, 0, 0.15));

@@ -1,0 +1,19 @@
+.button {
+    font-weight: 600;
+    border: none;
+    outline: none;
+    border-radius: 7px;
+    padding: $s-size;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.4rem;
+}
+
+.green {
+    background-color: $lt-green;
+    color: $dk-blue; 
+}
+
+.white {
+    background-color: white;
+    color: $lt-green; 
+}
