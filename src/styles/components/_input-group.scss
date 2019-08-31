@@ -1,0 +1,24 @@
+.input-group {
+    display: flex;
+    align-items: left;
+    flex-wrap: wrap;
+    flex: 0 0 50%;
+    margin-bottom: $m-size;
+    @media (min-width: $desktop-breakpoint) {
+        flex-direction: row;
+        margin-bottom: $l-size;
+        align-items: center;
+    }
+}
+
+.input-group__item {
+    margin-bottom: $s-size;
+    margin-right: $m-size;    
+    input, select, .date-picker {
+        height: 50px;
+    }
+    @media(min-width: $desktop-breakpoint) {
+        margin-right: $m-size;
+        margin-bottom: none;
+    }
+}
