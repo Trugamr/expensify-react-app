@@ -1,0 +1,103 @@
+.input, .select {
+    height: 52px;
+    border-radius: 7px; 
+    border: solid rgba(0, 0, 0, 0.2) 2px !important;
+    font-size: 1.6rem !important;
+    font-family: 'Open Sans', sans-serif !important;
+    box-sizing: border-box;
+    padding: 4px 10px;
+    color: $dk-blue;
+}
+.select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: url('/images/down-arrow.svg') 86% / 25% no-repeat;
+}
+.input {
+    padding: 4px 14px;
+}
+.input:focus, .select:focus {
+    outline: none;
+    border: solid $lt-green 2px !important; 
+}
+
+.textarea {
+    @extend .input;
+    height: 10rem;
+    padding: 10px 6px;
+}
+
+.DateRangePickerInput, .SingleDatePickerInput {
+    border-radius: 7px;
+    height: 50px;
+    border: solid rgba(0, 0, 0, 0.2) 2px !important;
+    font-family: 'Montserrat', sans-serif !important;
+    font-weight: 500 !important;
+    text-align: center;
+}
+
+.DateInput {
+    border-radius: 10px !important;
+    font-size: 1.6rem !important;
+    font-family: 'Open Sans', sans-serif !important;
+    width: 100px !important;
+}
+
+.DayPickerKeyboardShortcuts__show {
+    display: none;
+}
+
+.SingleDatePickerInput {
+    height: 52px;
+    box-sizing: border-box;
+    .DateInput {
+        padding: 8px 8px 8px 0px !important;
+    }
+}
+
+.DateInput__display-text--focused {
+    background-color: fade-out($color: $lt-green, $amount: 0.6)  !important;
+    font-family: 'Open Sans', sans-serif !important;
+    font-weight: 700 !important;
+    border-radius: 7px;
+} 
+
+.SingleDatePickerInput__calendar-icon {
+    margin: 0 !important;
+    color: $dk-blue !important;
+}
+
+.CalendarDay {
+    border: none !important;
+    border-radius: 0px !important;
+}
+
+.CalendarDay--selected {
+    background-color: $lt-green !important;
+    color: $dk-blue !important;
+}
+
+.CalendarDay--selected-start, .CalendarDay--selected-end {
+    background-color: $lt-green !important;
+    color: $dk-blue !important;
+}
+
+.CalendarDay--selected-span {
+    background-color: $lt-yellow !important;
+    color: $dk-blue !important;
+}
+
+.CalendarDay--hovered-span {
+    background-color: fade-out($color: $lt-yellow, $amount: .3) !important;
+    color: $dk-blue !important;
+}
+
+.DateRangePickerInput__clear-dates {
+    transition: ease all 0.2s;
+}
+
+.DateRangePickerInput__clear-dates:hover {
+    background-color: $lt-red !important;
+    border-radius: 7px !important;
+}

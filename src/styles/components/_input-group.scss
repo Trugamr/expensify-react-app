@@ -13,10 +13,7 @@
 
 .input-group__item {
     margin-bottom: $s-size;
-    margin-right: $m-size;    
-    input, select, .date-picker {
-        height: 50px;
-    }
+    margin-right: $m-size;
     @media(min-width: $desktop-breakpoint) {
         margin-right: $m-size;
         margin-bottom: none;

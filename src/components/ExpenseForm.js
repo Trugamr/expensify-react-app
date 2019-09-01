@@ -59,14 +59,16 @@ class ExpenseForm extends React.Component {
                 <p>{this.state.error && this.state.error}</p>
                 <form onSubmit={ this.onSubmit }>
                     <input
+                        className="input"
                         type="text"
-                        placeholder="description"
+                        placeholder="Description"
                         autoFocus
                         value={ this.state.description }
                         onChange={ this.onDescriptionChange }
                     />
                     <input
                         type="text"
+                        className="input"
                         placeholder="Amount"
                         value={ this.state.amount }
                         onChange={ this.onAmountChange }
@@ -78,8 +80,11 @@ class ExpenseForm extends React.Component {
                         onFocusChange={ this.onFocusChange }
                         numberOfMonths={1}
                         isOutsideRange={(day) => (false)}
+                        displayFormat={'MMM Do'}
+                        customInputIcon={<i className="fas fa-calendar-day"> </i>}
                     />
                     <textarea
+                        className="textarea"
                         placeholder="Add a note for your expense (optional)"
                         value={ this.state.note }
                         onChange={ this.onNoteChange}
