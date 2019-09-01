@@ -12,7 +12,8 @@
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
-    background: url('/images/down-arrow.svg') 86% / 25% no-repeat;
+    padding-right: 40px;
+    background: url('/images/down-arrow.svg') 90% / 20% no-repeat;
 }
 .input {
     padding: 4px 14px;
@@ -51,20 +52,21 @@
 .SingleDatePickerInput {
     height: 52px;
     box-sizing: border-box;
+    text-align: left !important;
     .DateInput {
+        width: auto !important;
         padding: 8px 8px 8px 0px !important;
     }
 }
 
 .DateInput__display-text--focused {
-    background-color: fade-out($color: $lt-green, $amount: 0.6)  !important;
+    background-color: fade-out($color: $lt-green, $amount: 0.8)  !important;
     font-family: 'Open Sans', sans-serif !important;
-    font-weight: 700 !important;
     border-radius: 7px;
 } 
 
 .SingleDatePickerInput__calendar-icon {
-    margin: 0 !important;
+    margin: 0 0 0 10px !important;
     color: $dk-blue !important;
 }
 

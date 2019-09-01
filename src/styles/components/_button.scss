@@ -23,3 +23,14 @@
     background-color: $dk-yellow;
     color: $dk-blue;
 }
+
+.red {
+    background-color: fade-out($color: $lt-red, $amount: 0.6);
+    color: darken($color: $dk-red, $amount: 20%);
+}
+
+.remove-button {
+    margin-top: 5px;
+    padding: 14px 10px;
+    float: right;
+}
