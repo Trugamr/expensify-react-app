@@ -1,11 +1,15 @@
 import React from 'react'
 import moment from 'moment'
 import { SingleDatePicker } from 'react-dates'
+// to show remove expense button on edit expense page inline with save expense
+import { startRemoveExpense } from '../actions/expenses'
+import { connect } from 'react-redux'
+import { history } from '../routers/AppRouter'
 
 const now= new moment()
 // console.log(now.format('MMM Do, YYYY'))
 
-class ExpenseForm extends React.Component {
+export class ExpenseForm extends React.Component {
     constructor(props) {
         super(props)
         this.state = {
@@ -53,6 +57,12 @@ class ExpenseForm extends React.Component {
             })
         }
     }
+    // just to show remove expense button here
+    onRemoveExpense = (e) => {
+        e.preventDefault()
+        this.props.startRemoveExpense({ id: this.props.expense.id })
+        history.push('/')
+    }
     render() {
         return (
             <form className="form" onSubmit={ this.onSubmit }>
@@ -91,12 +101,25 @@ class ExpenseForm extends React.Component {
                     onChange={ this.onNoteChange}
                 >
                 </textarea>
-                <button className="form__button button green">
-                    <i className="fas fa-save"></i> &nbsp;Save Expense
-                </button>
+                <div className="form__button-group">
+                    { this.props.showRemove && 
+                        <button className="form__button remove-button button red" onClick={this.onRemoveExpense}>
+                            <i className="fas fa-trash"></i> &nbsp;Remove Expense
+                        </button>
+                    }
+                    <button className="form__button save-button button green">
+                        <i className="fas fa-save"></i> &nbsp;Save Expense
+                    </button>
+                </div>
             </form>
         )
     }
 }
 
-export default ExpenseForm
+
+const mapDispatchToProps = (dispatch) => ({
+    startRemoveExpense: (data) => dispatch(startRemoveExpense(data))
+})
+
+
+export default connect(undefined, mapDispatchToProps)(ExpenseForm)
