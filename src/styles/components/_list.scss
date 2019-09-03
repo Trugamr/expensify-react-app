@@ -1,5 +1,5 @@
 .list-header {
-    background-color: lighten($color: $lt-green, $amount: 35%);
+    background-color: lighten($color: $lt-green, $amount: 48%);
     box-sizing: border-box;
     border-radius: 7px 7px 0 0;
     border-bottom: solid $lt-green 2px;
@@ -9,4 +9,60 @@
     font-family: "Open Sans", sans-serif;
     color: lighten($color: $dk-blue, $amount: 20%);
     font-weight: 600;
+}
+
+.list-items-container {
+    > :nth-child(2n) {
+        background-color: lighten($color: $lt-green, $amount: 48%);
+    }
+    > :nth-child(2n+1) {
+        background-color: lighten($color: $lt-green, $amount: 45%);
+    }
+    > :last-child {
+        border-radius: 0 0 7px 7px;
+    }
+    margin: 0 0 $l-size 0;
+}
+
+.list-item {
+    display: flex;
+    flex-direction: column;
+    color: $dk-blue;
+    text-decoration: none;
+    padding: $s-size;
+    transition: ease all 0.3s;
+    &:hover {
+
+    }
+    @media(min-width: $desktop-breakpoint) {
+        padding: $m-size;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+.list-item--message {
+    align-items: center;
+    justify-content: center;
+    padding: $m-size;
+}
+
+.list-item__title {
+    margin: 0;
+    word-break: break-all;
+    margin-bottom: 6px;
+}
+
+.list-item__subtitle {
+    font-size: 1.4rem;
+    color: lighten($color: $dk-blue, $amount: 20%);
+}
+
+.list-item__data {
+    margin: $s-size 0 0 0;
+    @media (min-width: $desktop-breakpoint) {
+        margin: 0;
+        padding-left: $s-size;
+    }
 }
