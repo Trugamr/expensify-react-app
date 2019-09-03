@@ -1,0 +1,12 @@
+.list-header {
+    background-color: lighten($color: $lt-green, $amount: 35%);
+    box-sizing: border-box;
+    border-radius: 7px 7px 0 0;
+    border-bottom: solid $lt-green 2px;
+    display: flex;
+    justify-content: space-between;
+    padding: $s-size $m-size;
+    font-family: "Open Sans", sans-serif;
+    color: lighten($color: $dk-blue, $amount: 20%);
+    font-weight: 600;
+}

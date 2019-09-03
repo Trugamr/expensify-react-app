@@ -1,5 +1,5 @@
 .box-layout {
-    background: url('/images/background-center.png');
+    background: url('/images/background-center.jpg');
     height: 100vh;
     widows: 100vw;
     background-size: cover;
@@ -75,7 +75,7 @@
     margin: auto;
     width: 94vw;
     box-sizing: border-box;
-    box-shadow: 0.3rem 0.3rem 10px 0px rgba(0, 0, 0, 0.25);
+    box-shadow: 0.3rem 0.3rem 10px 0px rgba(0, 0, 0, 0.1);
     @media (min-width: $desktop-breakpoint) {
         cursor: pointer;
         box-shadow: none;
