@@ -1,7 +1,7 @@
 import React from 'react'
 import { connect } from 'react-redux'
 import ExpenseForm from '../components/ExpenseForm'
-import { startRemoveExpense, startEditExpense, editExpense, removeExpense } from '../actions/expenses'
+import { startRemoveExpense, startEditExpense } from '../actions/expenses'
 
 export class EditExpensePage extends React.Component {
     onSubmit = (expense) => {
@@ -22,13 +22,13 @@ export class EditExpensePage extends React.Component {
                     </div>
                 </div>
                 <div className="content-container">
-                    <ExpenseForm 
+                    <ExpenseForm
                         expense={this.props.expense}
                         onSubmit={this.onSubmit}
                         // showing remove button on expense from
                         showRemove={true}
                     />
-                    {/* <button className="remove-button button red" onClick={this.onClick}><i className="fas fa-trash"></i> &nbsp;Remove Expense</button> */}
+                    <button style={{display: 'none'}} className="remove-button button red" onClick={this.onClick}><i className="fas fa-trash"></i> &nbsp;Remove Expense</button>
                 </div>
             </div>
         )

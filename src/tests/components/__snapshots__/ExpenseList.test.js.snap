@@ -1,38 +1,92 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`should render expenense list with expenses 1`] = `
-<div>
-  <ExpressListItem
-    amount={120}
-    createdAt={0}
-    description="Bubble Gum"
-    id="1"
-    key="1"
-    note=""
-  />
-  <ExpressListItem
-    amount={59000}
-    createdAt={-345600000}
-    description="Rent"
-    id="2"
-    key="2"
-    note=""
-  />
-  <ExpressListItem
-    amount={15000}
-    createdAt={345600000}
-    description="Gas Bill"
-    id="3"
-    key="3"
-    note=""
-  />
+<div
+  className="content-container"
+>
+  <div
+    className="list-header"
+  >
+    <div
+      className="show-for-mobile"
+    >
+      Expenses
+    </div>
+    <div
+      className="show-for-desktop"
+    >
+      Expense
+    </div>
+    <div
+      className="show-for-desktop"
+    >
+      Amount
+    </div>
+  </div>
+  <div
+    className="list-items-container"
+  >
+    <ExpressListItem
+      amount={120}
+      createdAt={0}
+      description="Bubble Gum"
+      id="1"
+      key="1"
+      note=""
+    />
+    <ExpressListItem
+      amount={59000}
+      createdAt={-345600000}
+      description="Rent"
+      id="2"
+      key="2"
+      note=""
+    />
+    <ExpressListItem
+      amount={15000}
+      createdAt={345600000}
+      description="Gas Bill"
+      id="3"
+      key="3"
+      note=""
+    />
+  </div>
 </div>
 `;
 
 exports[`should render expense list without expenses 1`] = `
-<div>
-  <p>
-    No Expenses
-  </p>
+<div
+  className="content-container"
+>
+  <div
+    className="list-header"
+  >
+    <div
+      className="show-for-mobile"
+    >
+      Expenses
+    </div>
+    <div
+      className="show-for-desktop"
+    >
+      Expense
+    </div>
+    <div
+      className="show-for-desktop"
+    >
+      Amount
+    </div>
+  </div>
+  <div
+    className="list-items-container"
+  >
+    <div
+      className="list-item list-item--message"
+    >
+      <span>
+        No Expenses
+      </span>
+    </div>
+  </div>
 </div>
 `;

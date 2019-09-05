@@ -2,22 +2,49 @@
 
 exports[`should render edit expense page correctly 1`] = `
 <div>
-  <ExpenseForm
-    expense={
-      Object {
-        "amount": 120,
-        "createdAt": 0,
-        "description": "Bubble Gum",
-        "id": "1",
-        "note": "",
-      }
-    }
-    onSubmit={[Function]}
-  />
-  <button
-    onClick={[Function]}
+  <div
+    className="page-header"
   >
-    Remove
-  </button>
+    <div
+      className="content-container"
+    >
+      <h1
+        className="page-header__title"
+      >
+        Edit Expense
+      </h1>
+    </div>
+  </div>
+  <div
+    className="content-container"
+  >
+    <Connect(ExpenseForm)
+      expense={
+        Object {
+          "amount": 120,
+          "createdAt": 0,
+          "description": "Bubble Gum",
+          "id": "1",
+          "note": "",
+        }
+      }
+      onSubmit={[Function]}
+      showRemove={true}
+    />
+    <button
+      className="remove-button button red"
+      onClick={[Function]}
+      style={
+        Object {
+          "display": "none",
+        }
+      }
+    >
+      <i
+        className="fas fa-trash"
+      />
+        Remove Expense
+    </button>
+  </div>
 </div>
 `;
