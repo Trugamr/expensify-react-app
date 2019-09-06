@@ -23,6 +23,26 @@
     }
 }
 
+.page-header__sub-title {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    color: fade-out($color: $dk-blue, $amount: 0.3);
+    font-size: 1.4rem;
+    span {
+        font-weight: 700;
+    }
+    margin-top: -5px;
+    transition: ease all 0.3;
+}
+
+.opacity-0 {
+    opacity: 0;
+}
+
+.opacity-1 {
+    opacity: 1;
+}
+
 .page-header__action {
     padding: $m-size 0; 
     i {
